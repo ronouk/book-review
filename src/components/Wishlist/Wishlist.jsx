@@ -1,4 +1,5 @@
 import React from 'react';
+import WishlistSingle from '../WishlistSingle/WishlistSingle';
 
 const Wishlist = ({allBooks}) => {
     const {name} = allBooks;
@@ -10,9 +11,9 @@ const Wishlist = ({allBooks}) => {
 
 
     return (
-        <div>
+        <div className='flex flex-col gap-6'>
             {
-                parsedWishlist.map(wishlistBookId => <h1>{allBooks[wishlistBookId].name}</h1>)
+                parsedWishlist.map(wishlistBookId => <WishlistSingle book = {allBooks[wishlistBookId]}></WishlistSingle>)
             }
         </div>
     );

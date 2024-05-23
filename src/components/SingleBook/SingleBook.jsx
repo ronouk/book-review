@@ -13,46 +13,48 @@ const SingleBook = () => {
      // add to wishlist
 
      const handleAddToWishlist = () => {
-        // addToWishlist(id);
+        addToWishlist(id);
+        toast("Added to wishlist")
 
-        const getStoredWishlist = localStorage.getItem('wishlist');
-        const storedWishlistParsed = JSON.parse(getStoredWishlist);
-        const getStoredReadlist = localStorage.getItem('readlist');
-        const storedReadlistParsed = JSON.parse(getStoredReadlist);
-        console.log(storedReadlistParsed, storedWishlistParsed, typeof storedWishlistParsed);
+        // const getStoredWishlist = localStorage.getItem('wishlist');
+        // const storedWishlistParsed = JSON.parse(getStoredWishlist);
+        // const getStoredReadlist = localStorage.getItem('readlist');
+        // const storedReadlistParsed = JSON.parse(getStoredReadlist);
+        // console.log(storedReadlistParsed, storedWishlistParsed, typeof storedWishlistParsed);
 
-        if(storedWishlistParsed.includes(id)){
-            toast("Already in wishlist")
-        }
+        // if(storedWishlistParsed.includes(id)){
+        //     toast("Already in wishlist")
+        // }
 
-        else if(storedReadlistParsed.includes(id)){
-            toast("Already in readlist") //if already in readlist, cannot be added to wishlist anymore
-        }
+        // else if(storedReadlistParsed.includes(id)){
+        //     toast("Already in readlist") //if already in readlist, cannot be added to wishlist anymore
+        // }
 
-        else{
-            addToWishlist(id);
-            toast("Added to wishlist")
-        }
+        // else{
+        //     addToWishlist(id);
+        //     toast("Added to wishlist")
+        // }
     }
 
 
     // add to read list
 
     const handleAddtoRead = () => {
-        // addToReadlist(id);
+        addToReadlist(id);
+        toast("Added to readlist")
 
-        const getStoredReadlist = localStorage.getItem('readlist');
-        const storedReadlistParsed = JSON.parse(getStoredReadlist);
-        console.log(storedReadlistParsed, typeof storedReadlistParsed);
+        // const getStoredReadlist = localStorage.getItem('readlist');
+        // const storedReadlistParsed = JSON.parse(getStoredReadlist);
+        // console.log(storedReadlistParsed, typeof storedReadlistParsed);
 
-        if(storedReadlistParsed.includes(id)){
-            toast("Already in readlist")
-        }
+        // if(storedReadlistParsed.includes(id)){
+        //     toast("Already in readlist")
+        // }
 
-        else{
-            addToReadlist(id);
-            toast("Added to readlist")
-        }
+        // else{
+        //     addToReadlist(id);
+        //     toast("Added to readlist")
+        // }
     }
 
     return (
