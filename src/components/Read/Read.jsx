@@ -1,9 +1,20 @@
 import React from 'react';
+import { json } from 'react-router-dom';
 
-const Read = () => {
+const Read = ({allBooks}) => {
+    const {name} = allBooks;
+    // console.log(allBooks[0]);
+    // console.log(allBooks[0].name);
+    const savedReadList = localStorage.getItem('readlist')
+    const parsedReadlist = JSON.parse(savedReadList);
+    console.log(parsedReadlist, typeof parsedReadlist);
+
+
     return (
         <div>
-            <h2>Read</h2>
+            {
+                parsedReadlist.map(readlistBookId => <h1>{allBooks[readlistBookId].name}</h1>)
+            }
         </div>
     );
 };

@@ -10,10 +10,11 @@ const getStoredWishList = () =>{
 
 
 const addToWishlist = id =>{
+    const idInt = parseInt(id);
     const storedWishlists = getStoredWishList();
-    const exist = storedWishlists.find(bookId => bookId === id)
+    const exist = storedWishlists.find(bookId => bookId === idInt)
     if(!exist){
-        storedWishlists.push(id);
+        storedWishlists.push(idInt);
         localStorage.setItem('wishlist', JSON.stringify(storedWishlists))
     }
 }
@@ -30,10 +31,11 @@ const getStoredReadList = () =>{
 
 
 const addToReadlist = id =>{
+    const idInt = parseInt(id);
     const storedReadlists = getStoredReadList();
-    const exist = storedReadlists.find(bookId => bookId === id)
+    const exist = storedReadlists.find(bookId => bookId === idInt)
     if(!exist){
-        storedReadlists.push(id);
+        storedReadlists.push(idInt);
         localStorage.setItem('readlist', JSON.stringify(storedReadlists))
     }
 }

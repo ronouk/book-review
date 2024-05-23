@@ -10,19 +10,22 @@ const SingleBook = () => {
     const { name, author, rating, summary, relevant_tag, category, number_of_pages, publisher, year_of_publishing, image } = singleBook;
     const placeholderImage = "https://res.cloudinary.com/gargiulo/image/upload/v1611877985/placeholder-1x1-book2_jnmnok.jpg";
 
-    // add to wishlist
+     // add to wishlist
 
-    const handleAddToWishlist = () => {
+     const handleAddToWishlist = () => {
         // addToWishlist(id);
 
         const getStoredWishlist = localStorage.getItem('wishlist');
+        const storedWishlistParsed = JSON.parse(getStoredWishlist);
         const getStoredReadlist = localStorage.getItem('readlist');
+        const storedReadlistParsed = JSON.parse(getStoredReadlist);
+        console.log(storedReadlistParsed, storedWishlistParsed, typeof storedWishlistParsed);
 
-        if(getStoredWishlist.includes(id)){
+        if(storedWishlistParsed.includes(id)){
             toast("Already in wishlist")
         }
 
-        else if(getStoredReadlist.includes(id)){
+        else if(storedReadlistParsed.includes(id)){
             toast("Already in readlist") //if already in readlist, cannot be added to wishlist anymore
         }
 
@@ -39,8 +42,10 @@ const SingleBook = () => {
         // addToReadlist(id);
 
         const getStoredReadlist = localStorage.getItem('readlist');
+        const storedReadlistParsed = JSON.parse(getStoredReadlist);
+        console.log(storedReadlistParsed, typeof storedReadlistParsed);
 
-        if(getStoredReadlist.includes(id)){
+        if(storedReadlistParsed.includes(id)){
             toast("Already in readlist")
         }
 
