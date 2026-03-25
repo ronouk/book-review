@@ -3,7 +3,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { addToReadlist, addToWishlist } from "../../utility/localStorage";
 
 const SingleBook = () => {
-    // const { id } = useParams();
     const clickedBook = useLoaderData();
     const { id, name, author, rating, summary, relevant_tag, category, number_of_pages, publisher, year_of_publishing, image } = clickedBook;
     const placeholderImage = "https://res.cloudinary.com/gargiulo/image/upload/v1611877985/placeholder-1x1-book2_jnmnok.jpg";

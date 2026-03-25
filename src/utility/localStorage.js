@@ -1,6 +1,8 @@
 import { toast } from "react-toastify";
 
-//add to wishlist
+//get item from localstorage
+
+//get stored wishlist
 const getStoredWishList = () => {
     const storedWishlist = localStorage.getItem('wishlist');
     if (storedWishlist) {
@@ -10,7 +12,7 @@ const getStoredWishList = () => {
     return [];
 }
 
-//add to read
+//get stored readlist
 const getStoredReadList = () => {
     const storedReadlist = localStorage.getItem('readlist');
     if (storedReadlist) {
@@ -20,7 +22,7 @@ const getStoredReadList = () => {
     return [];
 }
 
-
+//add to wishlist
 const addToWishlist = id => {
     const idInt = parseInt(id);
     const storedWishlists = getStoredWishList();
@@ -35,7 +37,7 @@ const addToWishlist = id => {
         toast("Added to wishlist")
     }
 
-    else if (isInReadList){
+    else if (isInReadList) {
         toast("Already in read list")
     }
 
@@ -44,7 +46,7 @@ const addToWishlist = id => {
     }
 }
 
-
+//add to readlist
 const addToReadlist = id => {
     const idInt = parseInt(id);
     const storedReadlists = getStoredReadList();
@@ -55,9 +57,25 @@ const addToReadlist = id => {
         toast("Added to readlist")
     }
 
-    else{
+    else {
         toast("Already in readlist")
     }
 }
 
-export { addToWishlist, getStoredWishList, addToReadlist, getStoredReadList }
+//delete from wishlist
+const deleteFromWishList = id => {
+    const idInt = parseInt(id);
+    const storedWishList = getStoredWishList();
+    const remainingWishListBooks = storedWishList.filter(bookId => bookId !== idInt);
+    localStorage.setItem("wishlist", JSON.stringify(remainingWishListBooks))
+}
+
+//delete from readlist
+const deleteFromReadList = id => {
+    const idInt = parseInt(id);
+    const storedReadList = getStoredReadList();
+    const remainingReadListBooks = storedReadList.filter(bookId => bookId !== idInt)
+    localStorage.setItem("readlist", JSON.stringify(remainingReadListBooks))
+}
+
+export { addToWishlist, getStoredWishList, addToReadlist, getStoredReadList, deleteFromReadList, deleteFromWishList }
