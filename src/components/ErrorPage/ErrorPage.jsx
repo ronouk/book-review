@@ -1,4 +1,5 @@
-import { NavLink, useNavigate } from "react-router";
+import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router";
 
 const ErrorPage = () => {
 
@@ -10,6 +11,9 @@ const ErrorPage = () => {
                 <h1 className="text-2xl font-bold">Oops! No page found</h1>
                 <button onClick={() => navigate(-1)} className="btn">GO HOME</button>
             </div>
+            <Helmet>
+                <title>Error</title>
+            </Helmet>
         </div>
     );
 };

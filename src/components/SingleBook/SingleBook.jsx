@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 import { addToReadlist, addToWishlist } from "../../utility/localStorage";
+import { Helmet } from "react-helmet-async";
 
 const SingleBook = () => {
     const clickedBook = useLoaderData();
@@ -59,6 +60,10 @@ const SingleBook = () => {
                     </div>
                 </div>
             </div>
+
+            <Helmet>
+                <title>{clickedBook.name}</title>
+            </Helmet>
 
         </div>
     );

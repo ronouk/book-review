@@ -11,6 +11,7 @@ import SingleBook from './components/SingleBook/SingleBook.jsx';
 import ListedBooks from "./components/ListedBooks/ListedBooks.jsx"
 import AllBooks from './components/AllBooks/AllBooks.jsx';
 import PagesToRead from './components/PagesToRead/PagesToRead.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -113,6 +114,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>
 )

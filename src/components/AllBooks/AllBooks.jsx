@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router';
 import BookCard from '../BookCard/BookCard';
+import { Helmet } from 'react-helmet-async';
 
 const AllBooks = () => {
 
@@ -19,6 +20,11 @@ const AllBooks = () => {
                 }
 
             </div>
+
+            <Helmet>
+                <title>All Books</title>
+            </Helmet>
+
         </div>
     );
 };

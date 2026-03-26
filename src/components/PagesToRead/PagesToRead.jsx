@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router";
 import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
@@ -168,8 +169,9 @@ const PagesToRead = () => {
                     <h1 className="text-xl font-bold">No book in readlist</h1>
             }
 
-
-
+            <Helmet>
+                <title>Pages to Read</title>
+            </Helmet>
         </div>
     );
 };

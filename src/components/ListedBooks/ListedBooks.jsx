@@ -3,6 +3,7 @@ import ReadList from "../ReadList/ReadList";
 import Wishlist from "../Wishlist/Wishlist";
 import { useState } from "react";
 import { addToReadlist, deleteFromReadList, deleteFromWishList } from "../../utility/localStorage"
+import { Helmet } from "react-helmet-async";
 
 const ListedBooks = () => {
 
@@ -94,7 +95,7 @@ const ListedBooks = () => {
 
     //handle move to read if mark as read
 
-    const handleMoveToRead = (id) =>{
+    const handleMoveToRead = (id) => {
 
         //update wish list
         const newWishList = wishList.filter(book => book.id !== id)
@@ -137,13 +138,18 @@ const ListedBooks = () => {
                         <Wishlist
                             displayWishList={displayWishList}
                             onDelete={handleDeleteWish}
-                            handleMove = {handleMoveToRead}
-                            addToReadlist = {addToReadlist}
+                            handleMove={handleMoveToRead}
+                            addToReadlist={addToReadlist}
                         ></Wishlist>
                     }
                 </div>
 
             </div>
+
+            <Helmet>
+                <title>Listed Books</title>
+            </Helmet>
+            
         </div>
     );
 };
