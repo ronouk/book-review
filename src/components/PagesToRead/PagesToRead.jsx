@@ -120,7 +120,7 @@ const PagesToRead = () => {
 
                         {/* readlist pages chart */}
 
-                        <h1 className="text-xl font-bold">Number of pages in Readlist Books</h1>
+                        <h1 className="text-xl font-bold">Number of pages in Wishlist Books</h1>
 
                         <div className="w-full md:w-4/5 h-96 mb-6">
                             <ResponsiveContainer>

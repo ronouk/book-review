@@ -1,13 +1,14 @@
-import { NavLink, useRouteError } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router";
 
 const ErrorPage = () => {
-    const error = useRouteError();
-    console.log(error);
+
+    const navigate = useNavigate();
     return (
-        <div className="h-screen grid justify-center items-center">
+        <div className="flex justify-center items-center my-12">
             <div id="error-page" className="text-center grid gap-4">
-                <h1 className="text-3xl font-bold">Oops! No page found</h1>
-                <NavLink to='/'><button className="btn">GO HOME</button></NavLink>
+                <img width={320} src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625589910/the-comedy-of-errors-9781625589910_hr.jpg" alt="" />
+                <h1 className="text-2xl font-bold">Oops! No page found</h1>
+                <button onClick={() => navigate(-1)} className="btn">GO HOME</button>
             </div>
         </div>
     );

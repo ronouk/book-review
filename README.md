@@ -1,12 +1,20 @@
-# React + Vite
+#### Live Link:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Netlify: https://bookvibe-ronouk.netlify.app/
 
-Currently, two official plugins are available:
+Surge: https://bookvibe-ronouk.surge.sh
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+#### Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Book Vibe** is a React-based web application designed for book enthusiasts to discover, track, and manage their reading collections. The app focuses on a clean user interface and persistent data management to ensure a seamless experience across browser sessions.
+
+---
+
+#### Core Features & Functionality
+
+* **Dual-List Management** : The app maintains two distinct categories for books: a **Wishlist** for future reading and a **Read List** (Completed Books) for finished titles.
+* **Mutual Exclusivity** : A custom logic ensures that a book cannot exist in both lists simultaneously. If a user marks a "Wishlist" book as "Read," the app automatically moves the entry from one category to the other.
+* **Persistent Storage** : All user data is handled via a dedicated `localStorage.js` utility, ensuring that book selections remain saved even after a page refresh or browser restart.
+* **Dynamic Sorting** : The "Listed Books" page includes functionality to sort collections by attributes such as rating or publishing year to help users organize their library.

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Header = () => {
     const links = <>
@@ -27,8 +28,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
-                    <a className="btn bg-[#23BE0A] text-white">Sign In</a>
-                    <a className="btn bg-[#59C6D2] text-white">Sign Up</a>
+                    <ThemeToggle></ThemeToggle>
                 </div>
             </div>
     );

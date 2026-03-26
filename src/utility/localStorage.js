@@ -50,16 +50,32 @@ const addToWishlist = id => {
 const addToReadlist = id => {
     const idInt = parseInt(id);
     const storedReadlists = getStoredReadList();
-    const exist = storedReadlists.find(bookId => bookId === idInt)
-    if (!exist) {
-        storedReadlists.push(idInt);
-        localStorage.setItem('readlist', JSON.stringify(storedReadlists));
-        toast("Added to readlist")
+    const isInReadList = storedReadlists.find(bookId => bookId === idInt)
+
+    //is in wish list
+    const storedWishList = getStoredWishList();
+    const isInWishList = storedWishList.find(bookId => bookId === idInt)
+
+    if (isInReadList) {
+        return toast("Already in Read List")
     }
 
-    else {
-        toast("Already in readlist")
+    if (isInWishList) {
+
+        const remainingWishlist = storedWishList.filter(bookId => bookId !== idInt);
+        localStorage.setItem('wishlist', JSON.stringify(remainingWishlist));
     }
+
+    storedReadlists.push(idInt);
+    localStorage.setItem('readlist', JSON.stringify(storedReadlists));
+
+    if(isInWishList){
+        toast("Moved from Wish List to Read List")
+    }
+    else{
+        toast("Added to Read List")
+    }
+
 }
 
 //delete from wishlist

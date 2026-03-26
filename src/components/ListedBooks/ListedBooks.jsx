@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router";
 import ReadList from "../ReadList/ReadList";
 import Wishlist from "../Wishlist/Wishlist";
 import { useState } from "react";
-import { deleteFromReadList, deleteFromWishList } from "../../utility/localStorage"
+import { addToReadlist, deleteFromReadList, deleteFromWishList } from "../../utility/localStorage"
 
 const ListedBooks = () => {
 
@@ -37,15 +37,15 @@ const ListedBooks = () => {
     //readlist sort
 
     const displayReadList = [...readList].sort((a, b) => {
-        if (sortType === "rating") {
+        if (sortType === ": Rating") {
             return b.rating - a.rating
         }
 
-        if (sortType === "pageNumber") {
+        if (sortType === ": Page Number") {
             return b.number_of_pages - a.number_of_pages
         }
 
-        if (sortType === "publishingYear") {
+        if (sortType === ": Publishing Year") {
             return b.year_of_publishing - a.year_of_publishing
         }
 
@@ -55,16 +55,16 @@ const ListedBooks = () => {
     //wishlist sort
 
     const displayWishList = [...wishList].sort((a, b) => {
-        if (sortType === "rating") {
-            return a.rating - b.rating
+        if (sortType === ": Rating") {
+            return b.rating - a.rating
         }
 
-        if (sortType === "pageNumber") {
-            return a.number_of_pages - b.number_of_pages
+        if (sortType === ": Page Number") {
+            return b.number_of_pages - a.number_of_pages
         }
 
-        if (sortType === "publishingYear") {
-            return a.year_of_publishing - b.year_of_publishing
+        if (sortType === ": Publishing Year") {
+            return b.year_of_publishing - a.year_of_publishing
         }
 
         return 0;
@@ -84,10 +84,25 @@ const ListedBooks = () => {
         setReadList(newReadList)
     }
 
+    //handle delete wishlist item
+
     const handleDeleteWish = (id) => {
         deleteFromWishList(id);
         const newWishList = wishList.filter(book => book.id !== id)
         setWishList(newWishList)
+    }
+
+    //handle move to read if mark as read
+
+    const handleMoveToRead = (id) =>{
+
+        //update wish list
+        const newWishList = wishList.filter(book => book.id !== id)
+        setWishList(newWishList);
+
+        //update readlist
+        const movedBook = allBooks.find(book => book.id === id);
+        setReadList([...readList, movedBook])
     }
 
     return (
@@ -96,11 +111,11 @@ const ListedBooks = () => {
 
             <div className="text-center mb-12">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn w-52 text-white bg-[#23BE0A]">Click</div>
+                    <div tabIndex={0} role="button" className="btn w-52 text-white bg-[#23BE0A]">Sort {`${sortType}`}</div>
                     <ul tabIndex={0} className="dropdown-content z-1 menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li onClick={() => handleSortList("rating")}><a>Rating</a></li>
-                        <li onClick={() => handleSortList("pageNumber")}><a>Number of Pages</a></li>
-                        <li onClick={() => handleSortList("publishingYear")}><a>Publish Year</a></li>
+                        <li onClick={() => handleSortList(": Rating")}><a>Rating</a></li>
+                        <li onClick={() => handleSortList(": Page Number")}><a>Number of Pages</a></li>
+                        <li onClick={() => handleSortList(": Publishing Year")}><a>Publish Year</a></li>
                     </ul>
                 </div>
             </div>
@@ -122,6 +137,8 @@ const ListedBooks = () => {
                         <Wishlist
                             displayWishList={displayWishList}
                             onDelete={handleDeleteWish}
+                            handleMove = {handleMoveToRead}
+                            addToReadlist = {addToReadlist}
                         ></Wishlist>
                     }
                 </div>

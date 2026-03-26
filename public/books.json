@@ -1,211 +1,543 @@
 [
-    {
-      "id": 1,
-      "name": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "rating": 4.2,
-      "summary": "A novel of the Jazz Age, The Great Gatsby tells the story of the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
-      "relevant_tag": ["Classic", "business"],
-      "category": "Fiction",
-      "number_of_pages": 180,
-      "publisher": "Charles Scribner's Sons",
-      "year_of_publishing": 1925,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg"
-    },
-    {
-      "id": 2,
-      "name": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "rating": 4.8,
-      "summary": "A novel about the serious issues of rape and racial inequality, told through the eyes of young Scout Finch in the Deep South during the 1930s.",
-      "relevant_tag": ["Classic"],
-      "category": "Fiction",
-      "number_of_pages": 281,
-      "publisher": "J.B. Lippincott & Co.",
-      "year_of_publishing": 1960,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1200px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
-    },
-    {
-      "id": 3,
-      "name": "1984",
-      "author": "George Orwell",
-      "rating": 4.6,
-      "summary": "A dystopian novel set in a totalitarian society under constant surveillance, where independent thought is persecuted as a 'thoughtcrime'.",
-      "relevant_tag": ["Dystopian", "Fantasy"],
-      "category": "Science Fiction",
-      "number_of_pages": 328,
-      "publisher": "Secker & Warburg",
-      "year_of_publishing": 1949,
-      "image": "https://s3.amazonaws.com/adg-bucket/1984-george-orwell/3423-medium.jpg"
-    },
-    {
-      "id": 4,
-      "name": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "rating": 4.0,
-      "summary": "The story of Holden Caulfield, a teenage boy who has been expelled from prep school and his journey through New York City.",
-      "relevant_tag": ["Classic"],
-      "category": "Fiction",
-      "number_of_pages": 214,
-      "publisher": "Little, Brown and Company",
-      "year_of_publishing": 1951,
-      "image": "https://npr.brightspotcdn.com/dims4/default/f735808/2147483647/strip/true/crop/363x574+0+0/resize/880x1392!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwkar%2Ffiles%2Fcatcher_in_the_rye_cover.png"
-    },
-    {
-      "id": 5,
-      "name": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "rating": 4.7,
-      "summary": "A romantic novel that charts the emotional development of Elizabeth Bennet, who learns about the repercussions of hasty judgments and the true nature of love.",
-      "relevant_tag": ["Romance", "medieval"],
-      "category": "Classic",
-      "number_of_pages": 279,
-      "publisher": "T. Egerton, Whitehall",
-      "year_of_publishing": 1813,
-      "image": "https://readaloudrevival.com/wp-content/uploads/2016/05/Pride-and-Prejudice.png.webp"
-    },
-    {
-      "id": 6,
-      "name": "The Hobbit",
-      "author": "J.R.R. Tolkien",
-      "rating": 4.9,
-      "summary": "A fantasy novel that follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon.",
-      "relevant_tag": ["Fantasy", "Classic"],
-      "category": "Fantasy",
-      "number_of_pages": 310,
-      "publisher": "George Allen & Unwin",
-      "year_of_publishing": 1937,
-      "image": "https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        "id": 7,
-        "name": "Moby Dick",
-        "author": "Herman Melville",
-        "rating": 4.1,
-        "summary": "The narrative of Captain Ahab's obsessive quest to kill Moby Dick, the giant white sperm whale.",
-        "relevant_tag": ["Adventure", "Classic"],
-        "category": "Classic",
-        "number_of_pages": 635,
-        "publisher": "Harper & Brothers",
-        "year_of_publishing": 1851,
-        "image": "https://m.media-amazon.com/images/I/81R91ODA9DL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 8,
-        "name": "War and Peace",
-        "author": "Leo Tolstoy",
-        "rating": 4.3,
-        "summary": "A historical novel that chronicles the French invasion of Russia and the impact of the Napoleonic era on Tsarist society.",
-        "relevant_tag": ["Historical", "War"],
-        "category": "Classic",
-        "number_of_pages": 1225,
-        "publisher": "The Russian Messenger",
-        "year_of_publishing": 1869,
-        "image": "https://m.media-amazon.com/images/I/71wXZB-VtBL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 9,
-        "name": "The Alchemist",
-        "author": "Paulo Coelho",
-        "rating": 4.5,
-        "summary": "A philosophical book that tells the story of Santiago, a shepherd boy who dreams of finding a worldly treasure.",
-        "relevant_tag": ["Philosophical", "Fiction"],
-        "category": "Fiction",
-        "number_of_pages": 208,
-        "publisher": "HarperOne",
-        "year_of_publishing": 1988,
-        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg"
-      },
-      {
-        "id": 10,
-        "name": "The Road",
-        "author": "Cormac McCarthy",
-        "rating": 4.4,
-        "summary": "A post-apocalyptic novel that tells the story of a father and son's journey through a burned America.",
-        "relevant_tag": ["Post-apocalyptic", "Jombie"],
-        "category": "Fiction",
-        "number_of_pages": 287,
-        "publisher": "Alfred A. Knopf",
-        "year_of_publishing": 2006,
-        "image": "https://m.media-amazon.com/images/I/51M7XGLQTBL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 11,
-        "name": "The Book Thief",
-        "author": "Markus Zusak",
-        "rating": 4.6,
-        "summary": "A story narrated by Death about a young girl living in Nazi Germany, who finds solace by stealing books and sharing them with others.",
-        "relevant_tag": ["Historical"],
-        "category": "Fiction",
-        "number_of_pages": 552,
-        "publisher": "Picador",
-        "year_of_publishing": 2005,
-        "image": "https://m.media-amazon.com/images/I/914cHl9v7oL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 12,
-        "name": "Jane Eyre",
-        "author": "Charlotte Brontë",
-        "rating": 4.4,
-        "summary": "A classic novel that follows the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester.",
-        "relevant_tag": ["Classic", "Biography"],
-        "category": "Romance",
-        "number_of_pages": 500,
-        "publisher": "Smith, Elder & Co.",
-        "year_of_publishing": 1847,
-        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1692725440i/197321006.jpg"
-      },
-      {
-        "id": 13,
-        "name": "Brave New World",
-        "author": "Aldous Huxley",
-        "rating": 4.2,
-        "summary": "A dystopian novel set in a futuristic World State, where citizens are environmentally engineered into an intelligence-based social hierarchy.",
-        "relevant_tag": ["Dystopian", "Science Fiction"],
-        "category": "Science Fiction",
-        "number_of_pages": 268,
-        "publisher": "Chatto & Windus",
-        "year_of_publishing": 1932,
-        "image": "https://m.media-amazon.com/images/I/91D4YvdC0dL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 14,
-        "name": "The Da Vinci Code",
-        "author": "Dan Brown",
-        "rating": 4.0,
-        "summary": "A mystery thriller novel that follows Robert Langdon and Sophie Neveu as they investigate a murder in the Louvre Museum.",
-        "relevant_tag": ["Thriller", "Detective"],
-        "category": "Mystery",
-        "number_of_pages": 689,
-        "publisher": "Doubleday",
-        "year_of_publishing": 2003,
-        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1463592438i/30228538.jpg"
-      },
-      {
-        "id": 15,
-        "name": "The Girl on the Train",
-        "author": "Paula Hawkins",
-        "rating": 4.1,
-        "summary": "A psychological thriller that tells the story of Rachel Watson, who becomes entangled in a missing persons investigation.",
-        "relevant_tag": ["Thriller"],
-        "category": "Mystery",
-        "number_of_pages": 395,
-        "publisher": "Riverhead Books",
-        "year_of_publishing": 2015,
-        "image": "https://m.media-amazon.com/images/I/8183Y1myPvL._AC_UF1000,1000_QL80_DpWeblab_.jpg"
-      },
-      {
-        "id": 16,
-        "name": "The Hunger Games",
-        "author": "Suzanne Collins",
-        "rating": 4.3,
-        "summary": "A dystopian novel set in a post-apocalyptic future where children are chosen to fight to the death in a televised event.",
-        "relevant_tag": ["Dystopian"],
-        "category": "Young Adult",
-        "number_of_pages": 374,
-        "publisher": "Scholastic Press",
-        "year_of_publishing": 2008,
-        "image": "https://m.media-amazon.com/images/I/71un2hI4mcL._AC_UF1000,1000_QL80_.jpg"
-      }
-    ]
-  
+  {
+    "id": 1,
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "rating": 4.2,
+    "summary": "A novel of the Jazz Age, The Great Gatsby tells the story of the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
+    "relevant_tag": [
+      "Classic",
+      "business"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 180,
+    "publisher": "Charles Scribner's Sons",
+    "year_of_publishing": 1925,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg"
+  },
+  {
+    "id": 2,
+    "name": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "rating": 4.8,
+    "summary": "A novel about the serious issues of rape and racial inequality, told through the eyes of young Scout Finch in the Deep South during the 1930s.",
+    "relevant_tag": [
+      "Classic"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 281,
+    "publisher": "J.B. Lippincott & Co.",
+    "year_of_publishing": 1960,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1200px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
+  },
+  {
+    "id": 3,
+    "name": "1984",
+    "author": "George Orwell",
+    "rating": 4.6,
+    "summary": "A dystopian novel set in a totalitarian society under constant surveillance, where independent thought is persecuted as a 'thoughtcrime'.",
+    "relevant_tag": [
+      "Dystopian",
+      "Fantasy"
+    ],
+    "category": "Science Fiction",
+    "number_of_pages": 328,
+    "publisher": "Secker & Warburg",
+    "year_of_publishing": 1949,
+    "image": "https://s3.amazonaws.com/adg-bucket/1984-george-orwell/3423-medium.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "rating": 4.0,
+    "summary": "The story of Holden Caulfield, a teenage boy who has been expelled from prep school and his journey through New York City.",
+    "relevant_tag": [
+      "Classic"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 214,
+    "publisher": "Little, Brown and Company",
+    "year_of_publishing": 1951,
+    "image": "https://npr.brightspotcdn.com/dims4/default/f735808/2147483647/strip/true/crop/363x574+0+0/resize/880x1392!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwkar%2Ffiles%2Fcatcher_in_the_rye_cover.png"
+  },
+  {
+    "id": 5,
+    "name": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "rating": 4.7,
+    "summary": "A romantic novel that charts the emotional development of Elizabeth Bennet, who learns about the repercussions of hasty judgments and the true nature of love.",
+    "relevant_tag": [
+      "Romance",
+      "medieval"
+    ],
+    "category": "Classic",
+    "number_of_pages": 279,
+    "publisher": "T. Egerton, Whitehall",
+    "year_of_publishing": 1813,
+    "image": "https://readaloudrevival.com/wp-content/uploads/2016/05/Pride-and-Prejudice.png.webp"
+  },
+  {
+    "id": 6,
+    "name": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "rating": 4.9,
+    "summary": "A fantasy novel that follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon.",
+    "relevant_tag": [
+      "Fantasy",
+      "Classic"
+    ],
+    "category": "Fantasy",
+    "number_of_pages": 310,
+    "publisher": "George Allen & Unwin",
+    "year_of_publishing": 1937,
+    "image": "https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Moby Dick",
+    "author": "Herman Melville",
+    "rating": 4.1,
+    "summary": "The narrative of Captain Ahab's obsessive quest to kill Moby Dick, the giant white sperm whale.",
+    "relevant_tag": [
+      "Adventure",
+      "Classic"
+    ],
+    "category": "Classic",
+    "number_of_pages": 635,
+    "publisher": "Harper & Brothers",
+    "year_of_publishing": 1851,
+    "image": "https://m.media-amazon.com/images/I/81R91ODA9DL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 8,
+    "name": "War and Peace",
+    "author": "Leo Tolstoy",
+    "rating": 4.3,
+    "summary": "A historical novel that chronicles the French invasion of Russia and the impact of the Napoleonic era on Tsarist society.",
+    "relevant_tag": [
+      "Historical",
+      "War"
+    ],
+    "category": "Classic",
+    "number_of_pages": 1225,
+    "publisher": "The Russian Messenger",
+    "year_of_publishing": 1869,
+    "image": "https://m.media-amazon.com/images/I/71wXZB-VtBL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Art of War",
+    "author": "Sun Tzu",
+    "rating": 4.7,
+    "summary": "An ancient Chinese military treatise detailing psychological warfare and strategy that remains influential today.",
+    "relevant_tag": ["Strategy", "History"],
+    "category": "Non-Fiction",
+    "number_of_pages": 273,
+    "publisher": "Various",
+    "year_of_publishing": -500,
+    "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781626860605/the-art-of-war-9781626860605_hr.jpg"
+  },
+  {
+    "id": 10,
+    "name": "The Road",
+    "author": "Cormac McCarthy",
+    "rating": 4.4,
+    "summary": "A post-apocalyptic novel that tells the story of a father and son's journey through a burned America.",
+    "relevant_tag": [
+      "Post-apocalyptic",
+      "Jombie"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 287,
+    "publisher": "Alfred A. Knopf",
+    "year_of_publishing": 2006,
+    "image": "https://m.media-amazon.com/images/I/51M7XGLQTBL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Book Thief",
+    "author": "Markus Zusak",
+    "rating": 4.6,
+    "summary": "A story narrated by Death about a young girl living in Nazi Germany, who finds solace by stealing books and sharing them with others.",
+    "relevant_tag": [
+      "Historical"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 552,
+    "publisher": "Picador",
+    "year_of_publishing": 2005,
+    "image": "https://m.media-amazon.com/images/I/914cHl9v7oL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "rating": 4.4,
+    "summary": "A classic novel that follows the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester.",
+    "relevant_tag": [
+      "Classic",
+      "Biography"
+    ],
+    "category": "Romance",
+    "number_of_pages": 500,
+    "publisher": "Smith, Elder & Co.",
+    "year_of_publishing": 1847,
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1692725440i/197321006.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Brave New World",
+    "author": "Aldous Huxley",
+    "rating": 4.2,
+    "summary": "A dystopian novel set in a futuristic World State, where citizens are environmentally engineered into an intelligence-based social hierarchy.",
+    "relevant_tag": [
+      "Dystopian",
+      "Science Fiction"
+    ],
+    "category": "Science Fiction",
+    "number_of_pages": 268,
+    "publisher": "Chatto & Windus",
+    "year_of_publishing": 1932,
+    "image": "https://m.media-amazon.com/images/I/91D4YvdC0dL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 14,
+    "name": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "rating": 4.0,
+    "summary": "A mystery thriller novel that follows Robert Langdon and Sophie Neveu as they investigate a murder in the Louvre Museum.",
+    "relevant_tag": [
+      "Thriller",
+      "Detective"
+    ],
+    "category": "Mystery",
+    "number_of_pages": 689,
+    "publisher": "Doubleday",
+    "year_of_publishing": 2003,
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1463592438i/30228538.jpg"
+  },
+  {
+    "id": 15,
+    "name": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "rating": 4.1,
+    "summary": "A psychological thriller that tells the story of Rachel Watson, who becomes entangled in a missing persons investigation.",
+    "relevant_tag": [
+      "Thriller"
+    ],
+    "category": "Mystery",
+    "number_of_pages": 395,
+    "publisher": "Riverhead Books",
+    "year_of_publishing": 2015,
+    "image": "https://m.media-amazon.com/images/I/8183Y1myPvL._AC_UF1000,1000_QL80_DpWeblab_.jpg"
+  },
+  {
+    "id": 16,
+    "name": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "rating": 4.3,
+    "summary": "A dystopian novel set in a post-apocalyptic future where children are chosen to fight to the death in a televised event.",
+    "relevant_tag": [
+      "Dystopian"
+    ],
+    "category": "Young Adult",
+    "number_of_pages": 374,
+    "publisher": "Scholastic Press",
+    "year_of_publishing": 2008,
+    "image": "https://m.media-amazon.com/images/I/71un2hI4mcL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 17,
+    "name": "The Shining",
+    "author": "Stephen King",
+    "rating": 4.5,
+    "summary": "A family stays in an isolated hotel where a sinister presence influences the father into violence, while his psychic son sees terrifying visions of the past.",
+    "relevant_tag": [
+      "Horror",
+      "Psychological",
+      "Classic"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 447,
+    "publisher": "Doubleday",
+    "year_of_publishing": 1977,
+    "image": "https://m.media-amazon.com/images/I/91U7HNa2NQL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Dune",
+    "author": "Frank Herbert",
+    "rating": 4.7,
+    "summary": "On a desert planet, a young nobleman becomes the leader of a rebellion to protect the galaxy’s most valuable resource while fulfilling a dangerous prophecy.",
+    "relevant_tag": [
+      "Sci-Fi",
+      "Epic",
+      "Adventure"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 412,
+    "publisher": "Chilton Books",
+    "year_of_publishing": 1965,
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg"
+  },
+  {
+    "id": 19,
+    "name": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "rating": 4.9,
+    "summary": "A stranded pilot meets a young prince from another planet who shares profound observations about life, love, and the strange nature of the adult world.",
+    "relevant_tag": [
+      "Fable",
+      "Philosophical",
+      "Children"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 96,
+    "publisher": "Reynal & Hitchcock",
+    "year_of_publishing": 1943,
+    "image": "https://m.media-amazon.com/images/I/81yLt8OG7zL.jpg"
+  },
+  {
+    "id": 20,
+    "name": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "rating": 4.6,
+    "summary": "Four siblings discover a magical wardrobe that leads to a frozen land where they must join a Great Lion to defeat an evil White Witch.",
+    "relevant_tag": [
+      "Fantasy",
+      "Adventure",
+      "Children"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 767,
+    "publisher": "Geoffrey Bles",
+    "year_of_publishing": 1950,
+    "image": "https://m.media-amazon.com/images/I/81RuC2qCSmL.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Frankenstein",
+    "author": "Mary Shelley",
+    "rating": 4.3,
+    "summary": "A scientist creates life from scavenged body parts, only to be horrified by his creation, leading to a tragic cycle of revenge and social isolation.",
+    "relevant_tag": [
+      "Gothic",
+      "Sci-Fi",
+      "Classic"
+    ],
+    "category": "Fiction",
+    "number_of_pages": 280,
+    "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "year_of_publishing": 1818,
+    "image": "https://m.media-amazon.com/images/I/81EU992zdwL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 22,
+    "name": "The Alchemist",
+    "author": "Paulo Coelho",
+    "rating": 4.7,
+    "summary": "A shepherd boy travels to Egypt to find a hidden treasure, discovering that the journey's wisdom is the true prize.",
+    "relevant_tag": ["Inspirational", "Quest", "Adventure"],
+    "category": "Fiction",
+    "number_of_pages": 163,
+    "publisher": "HarperTorch",
+    "year_of_publishing": 1988,
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Dracula",
+    "author": "Bram Stoker",
+    "rating": 4.4,
+    "summary": "An ancient vampire moves from Transylvania to England to spread his undead curse, while a small group of heroes fights to stop him.",
+    "relevant_tag": ["Gothic", "Horror", "Vampire"],
+    "category": "Fiction",
+    "number_of_pages": 418,
+    "publisher": "Archibald Constable and Company",
+    "year_of_publishing": 1897,
+    "image": "https://m.media-amazon.com/images/I/71xcDXkr1OL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 24,
+    "name": "The Martian",
+    "author": "Andy Weir",
+    "rating": 4.6,
+    "summary": "An astronaut is accidentally left behind on Mars and must use his scientific knowledge to survive until a rescue mission can reach him.",
+    "relevant_tag": ["Sci-Fi", "Survival", "Technical"],
+    "category": "Fiction",
+    "number_of_pages": 369,
+    "publisher": "Crown Publishing",
+    "year_of_publishing": 2011,
+    "image": "https://m.media-amazon.com/images/I/810W+zAp2DL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "rating": 4.7,
+    "summary": "A destitute student commits a murder to test a theory, only to be consumed by guilt and the psychological pressure of a clever investigator.",
+    "relevant_tag": ["Psychological", "Philosophy", "Crime"],
+    "category": "Fiction",
+    "number_of_pages": 671,
+    "publisher": "The Russian Messenger",
+    "year_of_publishing": 1866,
+    "image": "https://m.media-amazon.com/images/I/71O2XIytdqL.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Life of Pi",
+    "author": "Yann Martel",
+    "rating": 4.2,
+    "summary": "After a shipwreck, a young boy survives on a lifeboat in the Pacific Ocean with a Bengal tiger for 227 days.",
+    "relevant_tag": ["Adventure", "Survival", "Fantasy"],
+    "category": "Fiction",
+    "number_of_pages": 319,
+    "publisher": "Knopf Canada",
+    "year_of_publishing": 2001,
+    "image": "https://m.media-amazon.com/images/I/71wW1coSR0L.jpg"
+  },
+  {
+    "id": 27,
+    "name": "The Odyssey",
+    "author": "Homer",
+    "rating": 4.6,
+    "summary": "The hero Odysseus struggles to return home to Ithaca after the Trojan War, facing gods, monsters, and sirens along the way.",
+    "relevant_tag": ["Epic", "Mythology", "Classic"],
+    "category": "Fiction",
+    "number_of_pages": 541,
+    "publisher": "Ancient Greece",
+    "year_of_publishing": -800,
+    "image": "https://m.media-amazon.com/images/I/71FC1AcWTKL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Great Expectations",
+    "author": "Charles Dickens",
+    "rating": 4.1,
+    "summary": "An orphan named Pip receives a mysterious fortune from an unknown benefactor and tries to become a gentleman to win the heart of Estella.",
+    "relevant_tag": ["Classic", "Victorian", "Coming-of-age"],
+    "category": "Fiction",
+    "number_of_pages": 505,
+    "publisher": "Chapman & Hall",
+    "year_of_publishing": 1861,
+    "image": "https://m.media-amazon.com/images/I/715lBsaI4sL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 29,
+    "name": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "rating": 4.4,
+    "summary": "A young man remains youthful while his portrait ages and reflects his moral decay and sinful life.",
+    "relevant_tag": ["Gothic", "Philosophy", "Classic"],
+    "category": "Fiction",
+    "number_of_pages": 254,
+    "publisher": "Lippincott's Monthly Magazine",
+    "year_of_publishing": 1890,
+    "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781476788128/the-picture-of-dorian-gray-9781476788128_hr.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "rating": 4.3,
+    "summary": "An American soldier becomes 'unstuck in time,' experiencing his life and the firebombing of Dresden in a non-linear, satirical fashion.",
+    "relevant_tag": ["Anti-War", "Sci-Fi", "Satire"],
+    "category": "Fiction",
+    "number_of_pages": 190,
+    "publisher": "Delacorte",
+    "year_of_publishing": 1969,
+    "image": "https://m.media-amazon.com/images/I/91Jn9wb6ffL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 31,
+    "name": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "rating": 4.2,
+    "summary": "During the Great Depression, a poor family of sharecroppers travels to California in search of work, dignity, and a better future.",
+    "relevant_tag": ["Classic", "Historical", "Social Issues"],
+    "category": "Fiction",
+    "number_of_pages": 464,
+    "publisher": "The Viking Press",
+    "year_of_publishing": 1939,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "rating": 4.6,
+    "summary": "In a future where books are banned and burned, a fireman begins to question the state and joins a secret group of book-preservers.",
+    "relevant_tag": ["Dystopian", "Sci-Fi", "Classic"],
+    "category": "Fiction",
+    "number_of_pages": 158,
+    "publisher": "Ballantine Books",
+    "year_of_publishing": 1953,
+    "image": "https://m.media-amazon.com/images/I/71b674P2aKL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 33,
+    "name": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "rating": 4.3,
+    "summary": "In a near-future theocracy, a woman is forced into reproductive servitude and must navigate a dangerous world to find her lost daughter.",
+    "relevant_tag": ["Dystopian", "Feminist", "Speculative"],
+    "category": "Fiction",
+    "number_of_pages": 311,
+    "publisher": "McClelland and Stewart",
+    "year_of_publishing": 1985,
+    "image": "https://m.media-amazon.com/images/I/61su39k8NUL.jpg"
+  },
+  {
+    "id": 34,
+    "name": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "rating": 4.8,
+    "summary": "Noble families vie for control of the Iron Throne in a land where winters last years and ancient threats return from the north.",
+    "relevant_tag": ["Fantasy", "Political", "Epic"],
+    "category": "Fiction",
+    "number_of_pages": 694,
+    "publisher": "Bantam Spectra",
+    "year_of_publishing": 1996,
+    "image": "https://m.media-amazon.com/images/I/816fHlL9LjL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 35,
+    "name": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "rating": 4.8,
+    "summary": "Wrongfully imprisoned, a man escapes and uses a hidden treasure to meticulously destroy the lives of the men who betrayed him.",
+    "relevant_tag": ["Adventure", "Revenge", "Classic"],
+    "category": "Fiction",
+    "number_of_pages": 1276,
+    "publisher": "Le Journal des Débats",
+    "year_of_publishing": 1844,
+    "image": "https://www.hachettebookgroup.com/wp-content/uploads/2025/04/9781454959915_1b12e6.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Neuromancer",
+    "author": "William Gibson",
+    "rating": 4.0,
+    "summary": "A washed-up computer hacker is hired for one last job that leads him into a global conspiracy within a high-tech virtual reality.",
+    "relevant_tag": ["Cyberpunk", "Sci-Fi", "Noir"],
+    "category": "Fiction",
+    "number_of_pages": 271,
+    "publisher": "Ace Books",
+    "year_of_publishing": 1984,
+    "image": "https://m.media-amazon.com/images/I/81o7WR91hoL.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "rating": 4.7,
+    "summary": "A brief history of humankind, exploring how biology and history have defined us and enhanced our understanding of society.",
+    "relevant_tag": ["History", "Anthropology"],
+    "category": "Non-Fiction",
+    "number_of_pages": 443,
+    "publisher": "Harvill Secker",
+    "year_of_publishing": 2011,
+    "image": "https://m.media-amazon.com/images/I/716E6dQ4BXL._AC_UF1000,1000_QL80_.jpg"
+  }
+]

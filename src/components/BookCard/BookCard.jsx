@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { CiStar } from "react-icons/ci";
+import { FaBookReader, FaRegHeart, FaRegStar } from 'react-icons/fa';
+import { addToReadlist, addToWishlist } from "../../utility/localStorage";
 
 const BookCard = ({ book }) => {
     const { id, name, author, rating, relevant_tag, category, image } = book;
@@ -8,7 +9,21 @@ const BookCard = ({ book }) => {
     return (
         <NavLink to={`/bookdetails/${id}`}>
             <div className="border border-gray-200 rounded-xl p-6 flex flex-col gap-4 h-full">
-                <div className='flex justify-center bg-gray-200 p-6 rounded-xl'>
+                <div className='relative flex justify-center bg-gray-200 p-6 rounded-xl'>
+                    <div className='absolute top-4 right-4 space-y-2 text-xl'>
+                        <div
+                            className='bg-green-200 hover:bg-green-700 hover:text-white p-2 rounded-md cursor-pointer transition'
+                            title='Add to Wishlist'
+                            onClick={() => addToWishlist(id)}>
+                            <FaRegHeart />
+                        </div>
+                        <div
+                            className='bg-amber-200 hover:bg-green-700 hover:text-white p-2 rounded-md cursor-pointer transition'
+                            title='Mark as Read'
+                            onClick={() => addToReadlist(id)}>
+                            <FaBookReader />
+                        </div>
+                    </div>
                     <img className='h-60 rounded-xl' src={image} alt="" />
                 </div>
                 <div className='flex flex-col flex-1 gap-2 border-b border-dashed pb-3'>
@@ -19,11 +34,11 @@ const BookCard = ({ book }) => {
                     <h3>By: {author}</h3>
                     {/* <hr className='border-dashed' /> */}
                 </div>
-                <div className='flex justify-between'>
+                <div className='flex justify-between items-center'>
                     <p>{category}</p>
                     <div className='flex items-center gap-2'>
                         {rating}
-                        <CiStar className='hover:text-emerald-600' />
+                        <FaRegStar className='hover:text-emerald-600 mb-1' />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItemSingle from '../ListItemSingle/ListItemSingle';
 
-const Wishlist = ({ displayWishList, onDelete }) => {
+const Wishlist = ({ displayWishList, onDelete, handleMove, addToReadlist }) => {
 
     const listName = "wishlist";
 
@@ -14,6 +14,8 @@ const Wishlist = ({ displayWishList, onDelete }) => {
                         book={book}
                         listName={listName}
                         onDelete={onDelete}
+                        handleMove = {handleMove}
+                        addToReadlist = {addToReadlist}
                     ></ListItemSingle>)
                     :
                     <div>Nothing found</div>
