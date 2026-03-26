@@ -11,7 +11,7 @@ const Header = () => {
     </>
     return (
             <div className="navbar w-11/12 md:w-10/12 lg:w-10/12 mx-auto px-0 py-6">
-                <div className="navbar-start gap-2">
+                <div className="navbar-start gap-2 lg:gap-0">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -20,7 +20,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <NavLink to='/' className="text-2xl md:text-3xl font-extrabold">Book Vibe</NavLink>
+                    <NavLink to='/' className="text-2xl font-extrabold">Book Vibe</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-1">

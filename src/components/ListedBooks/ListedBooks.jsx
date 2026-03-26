@@ -112,7 +112,15 @@ const ListedBooks = () => {
 
             <div className="text-center mb-12">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn w-52 text-white bg-[#23BE0A]">Sort {`${sortType}`}</div>
+                    {
+                        (readList.length <= 1 && wishList.length <= 1) ?
+
+                            <div tabIndex={0} role="button" className="btn w-52 text-white bg-[#23BE0A]">Nothing to sort</div>
+                            :
+
+                            <div tabIndex={0} role="button" className="btn w-52 text-white bg-[#23BE0A]">Sort {`${sortType}`}</div>
+
+                    }
                     <ul tabIndex={0} className="dropdown-content z-1 menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li onClick={() => handleSortList(": Rating")}><a>Rating</a></li>
                         <li onClick={() => handleSortList(": Page Number")}><a>Number of Pages</a></li>
@@ -149,7 +157,7 @@ const ListedBooks = () => {
             <Helmet>
                 <title>Listed Books</title>
             </Helmet>
-            
+
         </div>
     );
 };

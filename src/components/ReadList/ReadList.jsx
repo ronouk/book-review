@@ -17,7 +17,7 @@ const ReadList = ({ displayReadList, onDelete }) => {
                         onDelete = {onDelete}
                     ></ListItemSingle>)
                     :
-                    <div>Nothing found</div>
+                    <div>No book added to Readlist yet</div>
             }
         </div>
     );

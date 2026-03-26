@@ -109,8 +109,10 @@ const PagesToRead = () => {
 
                     :
 
-                    <h1 className="text-xl font-bold">No book in readlist</h1>
+                    <h1 className="text-xl font-bold">No book in Readlist</h1>
             }
+
+            <hr className="w-full border-dashed border-gray-300" />
 
             {/* wishlist pages chart */}
 
@@ -166,7 +168,7 @@ const PagesToRead = () => {
 
                     :
 
-                    <h1 className="text-xl font-bold">No book in readlist</h1>
+                    <h1 className="text-xl font-bold">No book in Wishlist</h1>
             }
 
             <Helmet>

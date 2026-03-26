@@ -18,7 +18,7 @@ const Wishlist = ({ displayWishList, onDelete, handleMove, addToReadlist }) => {
                         addToReadlist = {addToReadlist}
                     ></ListItemSingle>)
                     :
-                    <div>Nothing found</div>
+                    <div>No book added to Wishlist yet</div>
             }
         </div>
     );

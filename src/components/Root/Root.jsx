@@ -5,9 +5,11 @@ import { ToastContainer } from "react-toastify";
 
 const Root = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Header></Header>
-            <Outlet></Outlet>
+            <div className="flex-1">
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
 
             {/* for toast */}
